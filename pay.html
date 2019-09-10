@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>支付方式</title>
+    <link rel="stylesheet" href="./assets/base.css">
+    <link rel="stylesheet" href="./assets/pay.css">
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+</head>
+
+<body>
+    <div id="payment">
+        <div id="wechat" class="bottBor">
+            <div class="left">
+                <img src="./assets/images/weixin.png"></img><span>微信支付</span>
+            </div>
+            <div class="right show">
+                <div></div>
+            </div>
+        </div>
+        <div id="alipay" class="bottBor">
+            <div class="left">
+                <img src="./assets/images/alipay.jpg"></img><span>支付宝支付</span>
+            </div>
+            <div class="right hide">
+                <div></div>
+            </div>
+        </div>
+        <div id="cards" class="bottBor">
+            <div class="left">
+                <img src="./assets/images/cards.jpg"></img><span>银行转账</span>
+            </div>
+            <div class="right hide">
+                <div></div>
+            </div>
+        </div>
+    </div>
+    <div id="toPay" class="btn">
+        <a href="#">去支付</a>
+    </div>
+</body>
+<script>
+    let $wechat = $('#wechat');
+    let $alipay = $('#alipay');
+    let $cards = $('#cards');
+
+
+    $wechat.on('click', function() {
+        $wechat.children('.right').addClass('show').removeClass('hide');
+        $alipay.children('.right').addClass('hide').removeClass('show');
+        $cards.children('.right').addClass('hide').removeClass('show');
+    })
+    $alipay.on('click', function() {
+        $alipay.children('.right').addClass('show').removeClass('hide');
+        $wechat.children('.right').addClass('hide').removeClass('show');
+        $cards.children('.right').addClass('hide').removeClass('show');
+    })
+    $cards.on('click', function() {
+        $cards.children('.right').addClass('show').removeClass('hide');
+        $alipay.children('.right').addClass('hide').removeClass('show');
+        $wechat.children('.right').addClass('hide').removeClass('show');
+    })
+</script>
+
+</html>

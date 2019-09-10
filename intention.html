@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>意向论坛收集</title>
+    <link rel="stylesheet" href="./assets/base.css">
+    <link rel="stylesheet" href="./assets/intention.css">
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+</head>
+
+<body>
+    <div id="container">
+        <div class="day">
+            <div class="date">
+                11月20日
+            </div>
+            <div class="title">
+                <span class="selected">✔</span>
+                <h4>论坛名称</h4>
+            </div>
+            <div class="content bottBor">论坛描述论坛描述论坛描述论坛描述论坛描述论坛描述论坛描述论</div>
+            <div class="title">
+                <span class="unselected">✔</span>
+                <h4>论坛名称</h4>
+            </div>
+            <div class="content bottBor">论坛描述论坛描述论坛描述论坛描述论坛描述论坛描述论坛描述论</div>
+        </div>
+        <div class="day">
+            <div class="date">
+                11月21日
+            </div>
+            <div class="title">
+                <span class="selected">✔</span>
+                <h4>论坛名称</h4>
+            </div>
+            <div class="content bottBor">论坛描述论坛描述论坛描述论坛描述论坛描述论坛描述论坛描述论</div>
+            <div class="title">
+                <span class="unselected">✔</span>
+                <h4>论坛名称</h4>
+            </div>
+            <div class="content bottBor">论坛描述论坛描述论坛描述论坛描述论坛描述论坛描述论坛描述论</div>
+        </div>
+    </div>
+    <div id="next" class="btn">
+        <a href="#">下一步</a>
+    </div>
+</body>
+<script>
+    let $selecteds = $('span');
+    let $btn = $('a');
+    $selecteds.on('click', function() {
+        this.className = (this.className == 'selected' ? 'unselected' : 'selected');
+    })
+</script>
+
+</html>

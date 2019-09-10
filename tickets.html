@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>门票选择</title>
+    <link rel="stylesheet" href="./assets/base.css">
+    <link rel="stylesheet" href="./assets/tickets.css">
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+</head>
+
+<body>
+    <div id="header">
+        <div class="ticket bottBor" id="firstTicket">
+            <div class="round left show" id="topR">
+                <div></div>
+            </div>
+            <div class="ticketInfo right">
+                <div class="ticName">
+                    <h4>门票名称</h4>
+                    <p>¥100</p>
+                </div>
+                <div class="equity">
+                    <h4>权益</h4>
+                    <p>· 观展门票(仅限一位成人)</p>
+                </div>
+            </div>
+        </div>
+        <div class="ticket bottBor" id="secondTicket">
+            <div class="round left hide" id="bottR">
+                <div></div>
+            </div>
+            <div class="ticketInfo right">
+                <div class="ticName">
+                    <h4>门票名称</h4>
+                    <p>¥100</p>
+                </div>
+                <div class="equity">
+                    <h4>权益</h4>
+                    <p>· 观展门票(仅限一位成人)</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="center">
+        <h4>【门票预定须知】</h4>
+        <p>1. 中国大陆参与嘉宾请使用中国大陆手机号码购票，便于接收系统短信及参会二维码；外籍嘉宾请使用电子邮箱购票；</p>
+        <p>2. 购票下单成功后需在30分钟内完成支付，未支付成功订单将被系统自动取消；</p>
+    </div>
+    <div id="footer" class="btn">
+        <a href="#">去支付</a>
+    </div>
+</body>
+<script>
+    let $firstTicket = $('#firstTicket');
+    let $secondTicket = $('#secondTicket');
+    let $topR = $('#topR');
+    let $bottR = $('#bottR');
+    console.log($firstTicket);
+    $firstTicket.on('click', function() {
+        $topR.addClass('show').removeClass('hide');
+        $bottR.removeClass('show').addClass('hide');
+    });
+    $secondTicket.on('click', function() {
+        $bottR.addClass('show').removeClass('hide');
+        $topR.removeClass('show').addClass('hide');
+    });
+</script>
+
+</html>
