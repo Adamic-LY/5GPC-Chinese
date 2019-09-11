@@ -19,7 +19,7 @@
   padding: 0 3rem;
   line-height: 4rem;
   color: #fff;
-  font-size: 24px;
+  font-size: 1.5rem;
 }
 #pay #payment #PAY {
   padding: 0 4rem;
@@ -29,7 +29,7 @@
 #pay #payment #PAY .pay {
   margin-top: 1rem;
   margin-right: 3rem;
-  font-size: 24px;
+  font-size: 1.5rem;
 }
 #pay #payment #PAY .pay span {
   color: #e60000;
@@ -37,11 +37,11 @@
 #pay #payment #PAY #wechat,
 #pay #payment #PAY #alipay,
 #pay #payment #PAY #cards {
-  width: 15rem;
+  width: 14rem;
   height: 4rem;
   border: 1px solid #7d7d7d;
-  padding-left: 2.8rem;
-  margin-left: 2rem;
+  padding-left: 2rem;
+  margin-left: 1rem;
   position: relative;
   overflow: hidden;
 }
@@ -61,7 +61,7 @@
   float: left;
   height: 4rem;
   line-height: 4rem;
-  font-size: 18px;
+  font-size: 1.1rem;
 }
 #pay #payment #PAY #wechat img:last-child,
 #pay #payment #PAY #alipay img:last-child,
@@ -85,14 +85,14 @@
 #pay #account #title {
   height: 6rem;
   line-height: 6rem;
-  font-size: 24px;
+  font-size: 1.5rem;
 }
 #pay #account #details {
   margin-top: 3rem;
   margin-bottom: 3.5rem;
 }
 #pay #account #details div {
-  font-size: 18px;
+  font-size: 1.1;
   color: #969696;
   margin-bottom: 1rem;
 }
@@ -101,26 +101,14 @@
   height: 3rem;
   margin-bottom: 6rem;
 }
-#pay #btn a {
-  display: block;
-  width: 19rem;
-  height: 3rem;
-  background-color: #5a92fb;
-  border-radius: 2rem;
-  color: #f8f9fc;
-  text-align: center;
-  line-height: 3rem;
-  margin: 0 auto;
-  font-size: 18px;
-}
 #pay #tips {
   padding: 0 4rem;
 }
 #pay #tips h4 {
-  font-size: 20px;
+  font-size: 1.25rem;
   margin-bottom: 2rem;
 }
 #pay #tips p {
-  font-size: 18px;
+  font-size: 1.1rem;
   margin-bottom: 1rem;
 }

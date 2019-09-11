@@ -1,0 +1,67 @@
+#intention {
+  width: 75rem;
+  height: 48rem;
+  margin: 5rem auto;
+  margin-bottom: 0;
+}
+#intention #title {
+  padding-left: 3rem;
+  font-size: 2rem;
+  padding-bottom: 1.25rem;
+  color: #5a92fb;
+  border-bottom: 1px solid #0a386f;
+}
+#intention #container {
+  width: 100%;
+  height: 46rem;
+}
+#intention #container .day {
+  width: 100%;
+  height: 50%;
+  padding-top: 2rem;
+}
+#intention #container .day .date div {
+  color: #5a92fb;
+  display: block;
+  font-size: 2rem;
+  font-weight: 700;
+  font-style: italic;
+}
+#intention #container .day .date div:nth-child(2) b {
+  color: #5a92fb;
+  font-size: 1.5rem;
+}
+#intention #container .day .date div:nth-child(2) i {
+  color: #5a92fb;
+  font-size: 0.9rem;
+}
+#intention #container .day .rText {
+  margin-left: 5rem;
+}
+#intention #container .day .rText .context {
+  width: 67rem;
+  height: 11rem;
+}
+#intention #container .day .rText .context .title {
+  width: 100%;
+  height: 4rem;
+}
+#intention #container .day .rText .context .title div {
+  width: 2rem;
+  height: 2rem;
+  border-radius: 50%;
+}
+#intention #container .day .rText .context .title h4 {
+  line-height: 2rem;
+  margin-left: 3rem;
+  color: #0a2e5b;
+  font-size: 1.5rem;
+}
+#intention #container .day .rText .context .content {
+  font-size: 1.1rem;
+  padding-right: 2rem;
+  padding-left: 5rem;
+}
+#intention #next {
+  margin-top: 7rem;
+}

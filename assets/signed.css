@@ -21,7 +21,7 @@
 #header #success p {
   text-align: center;
   margin-top: 2rem;
-  font-size: 20px;
+  font-size: 1.25rem;
 }
 #text {
   width: 100%;
@@ -31,9 +31,9 @@
 }
 #text p {
   margin-bottom: 2rem;
-  font-size: 14px;
+  font-size: 0.9rem;
 }
 #go {
   margin-top: 2rem;
-  font-size: 18px;
+  font-size: 1.15rem;
 }

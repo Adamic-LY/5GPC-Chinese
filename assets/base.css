@@ -37,13 +37,15 @@ body {
 }
 .btn a {
   display: block;
-  width: 100%;
+  width: 19rem;
   height: 3rem;
-  background-color: #689dfd;
+  background-color: #5a92fb;
   border-radius: 2rem;
   color: #f8f9fc;
   text-align: center;
   line-height: 3rem;
+  margin: 0 auto;
+  font-size: 1.1rem;
 }
 input {
   outline: none;
@@ -69,6 +71,20 @@ input {
   left: 0;
   right: 0;
   margin: auto;
+}
+.selected {
+  border: 1px solid #5a92fb;
+}
+.selected span {
+  display: block;
+  width: 1.4rem;
+  height: 1.4rem;
+  border-radius: 50%;
+  background-color: #5a92fb;
+  margin: 0.25rem;
+}
+.unselected {
+  border: 1px solid #969696;
 }
 @media only screen and (min-width: 320px) {
   body,
@@ -115,10 +131,28 @@ input {
 @media only screen and (min-width: 980px) {
   body,
   html {
-    font-size: 36px;
+    font-size: 14px;
   }
 }
 @media only screen and (min-width: 1200px) {
+  body,
+  html {
+    font-size: 10px;
+  }
+}
+@media only screen and (min-width: 1320px) {
+  body,
+  html {
+    font-size: 11px;
+  }
+}
+@media only screen and (min-width: 1440px) {
+  body,
+  html {
+    font-size: 12px;
+  }
+}
+@media only screen and (min-width: 1920px) {
   body,
   html {
     font-size: 16px;
