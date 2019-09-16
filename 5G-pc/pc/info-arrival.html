@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <meta name="renderer" content="webkit"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>抵离信息收集</title>
+    <link rel="stylesheet" type="text/css" href="../css/reset.min.css">
+    <link rel="stylesheet" type="text/css" href="../css/pc.css">
+</head>
+
+<body>
+<div class="wrapper">
+    <div class="info">
+        <div class="info_title">抵离信息收集</div>
+        <form action="" id="form">
+            <ul>
+                <li>
+                    <div class="form_title">抵京信息</div>
+                </li>
+                <li>
+                    <p>航班号／火车车次</p>
+                    <input type="text" name="arrive" placeholder="请输入航班号／火车车次"/>
+                </li>
+                <li>
+                    <p>抵达时间</p>
+                    <input type="text" name="arriveTime" placeholder="请输入抵达时间"/>
+                </li>
+                <li>
+                    <p>抵达机场／车站</p>
+                    <select name="arrivePlace">
+                        <option selected="" value="首都机场T1航站楼">首都机场T1航站楼</option>
+                        <option value="首都机场T2航站楼">首都机场T2航站楼</option>
+                        <option value="首都机场T3航站楼">首都机场T3航站楼</option>
+                        <option value="北京站">北京站</option>
+                        <option value="北京南站">北京南站</option>
+                        <option value="北京东站">北京东站</option>
+                    </select>
+                </li>
+                <li>
+                    <p>是否需要接机／接站</p>
+                    <div class="radio_wrap">
+                        <input type="radio" name="needPick" value="yes" id="yes1">
+                        <label for="yes1">是</label>
+                    </div>
+                    <div class="radio_wrap">
+                        <input type="radio" name="needPick" value="no" id="no1">
+                        <label for="no1">否</label>
+                    </div>
+                </li>
+            </ul>
+            <ul>
+                <li>
+                    <div class="form_title">离京信息</div>
+                </li>
+                <li>
+                    <p>航班号／火车车次</p>
+                    <input type="text" name="leave" placeholder="请输入航班号／火车车次"/>
+                </li>
+                <li>
+                    <p>起飞时间／发车时间</p>
+                    <input type="text" name="leaveTime" placeholder="请输入起飞时间／发车时间"/>
+                </li>
+                <li>
+                    <p>出发机场／车站</p>
+                    <select name="leavePlace">
+                        <option selected="" value="首都机场T1航站楼">首都机场T1航站楼</option>
+                        <option value="首都机场T2航站楼">首都机场T2航站楼</option>
+                        <option value="首都机场T3航站楼">首都机场T3航站楼</option>
+                        <option value="北京站">北京站</option>
+                        <option value="北京南站">北京南站</option>
+                        <option value="北京东站">北京东站</option>
+                    </select>
+                </li>
+                <li>
+                    <p>是否需要送机／送站</p>
+                    <div class="radio_wrap">
+                        <input type="radio" name="needSend" value="yes" id="yes">
+                        <label for="yes">是</label>
+                    </div>
+                    <div class="radio_wrap">
+                        <input type="radio" name="needSend" value="no" id="no">
+                        <label for="no">否</label>
+                    </div>
+                </li>
+            </ul>
+            <div class="bigBtn">完成</div>
+        </form>
+    </div>
+</div>
+
+<script type="text/javascript" src="../js/jquery-1.10.2.min.js"></script>
+<script type="text/javascript" src="../layer/layer.js"></script>
+<script type="text/javascript" src="../js/adaptive.js"></script>
+<script>
+$(window).load(function () {
+    $(".bigBtn").click(function () {
+
+    })
+})
+</script>
+</body>
+</html>

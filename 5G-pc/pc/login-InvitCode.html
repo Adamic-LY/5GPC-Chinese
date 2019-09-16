@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <meta name="renderer" content="webkit"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>信息收集</title>
+    <link rel="stylesheet" type="text/css" href="../css/reset.min.css">
+    <link rel="stylesheet" type="text/css" href="../css/pc.css">
+    <style>
+        body,html{
+            width: 100%;
+            height: 100%;
+        }
+    </style>
+</head>
+
+<body>
+<div id="wrap">
+    <div class="tr"></div>
+</div>
+<div class="login clearfix">
+    <img src="../img/login_pic1.png" alt="" class="login_l">
+    <form action="" id="form">
+        <ul>
+            <li>
+                <div class="login_title">信息收集</div>
+            </li>
+            <li>
+                <span><img src="../img/login_icon3.png" alt="" class="icon3"></span>
+                <input type="text" name="invitationCode" placeholder="请输入邀请码"/>
+            </li>
+        </ul>
+        <div class="bigBtn m">下一步</div>
+    </form>
+</div>
+
+<script type="text/javascript" src="../js/jquery-1.10.2.min.js"></script>
+<script type="text/javascript" src="../layer/layer.js"></script>
+<script type="text/javascript" src="../js/adaptive.js"></script>
+<script>
+    $(".bigBtn").click(function () {
+        if ($("input").val()) {
+
+        }else{
+            layer.msg('去买票')
+        }
+    })
+
+    function triangle() {
+        $("#wrap .tr").css({
+            "border-left": $('#wrap').width() + "px solid #fff",
+            "border-bottom": $('#wrap').height() + "px solid transparent"
+        });
+    }
+    triangle();
+    $(window).on('resize', triangle);
+</script>
+</body>
+</html>
