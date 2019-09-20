@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>支付方式</title>
+    <link rel="stylesheet" href="./assets/base.css">
+    <link rel="stylesheet" href="./assets/pay2.css">
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+</head>
+
+<body>
+    <div class="logo">
+        <img src="./assets/images/logo.jpg">
+    </div>
+    <div id="pay">
+        <div id="payment" class="bottBor">
+            <div class="payment">支付方式</div>
+            <div id="PAY">
+                <div class="pay left">请选择支付方式 <span> *</span></div>
+                <div id="wechat" class="left">
+                    <img src="./assets/images/weixin.png"></img><span>微信支付</span><img src="./assets/images/矩形.png" class="hide select"></img>
+                </div>
+                <div id="alipay" class="left">
+                    <img src="./assets/images/alipay.jpg"></img><span>支付宝支付</span><img src="./assets/images/矩形.png" class="hide select"></i>
+                </div>
+                <div id="cards" class="left">
+                    <img src="./assets/images/cards.jpg"></img><span>银行转账</span><img src="./assets/images/矩形.png" class="show select"></i>
+                </div>
+            </div>
+        </div>
+        <div id="account">
+            <div id="toWechat" class="hide">
+
+            </div>
+            <div id="toAlipay" class="hide">
+
+            </div>
+            <div id="toCard" class="show">
+                <div id="title" class="bottBor">对公付款账号：</div>
+                <div id="details">
+                    <div>账户名称：北京未来移动通信论坛管理有限责任公司</div>
+                    <div>银行账号：11050163360000002005</div>
+                    <div>开 户 行：中国建设银行北京中关村分行</div>
+                    <div>银行地址：北京市海淀区知春路96号</div>
+                </div>
+            </div>
+
+        </div>
+        <div id="btn" class="btn">
+            <a href="#"></a>
+        </div>
+        <div id="tips" class="hide">
+            <h4>【温馨提示】</h4>
+            <p>1、对公转账请注明购票人员信息（姓名、单位）、门票种类（通票，20/21/22单日票）、门票数量</p>
+            <p>2、付款七个工作日会发送参会二维码，发票将统一在大会结束后一个月内寄出</p>
+        </div>
+    </div>
+</body>
+<script>
+    let $wechat = $('#wechat');
+    let $alipay = $('#alipay');
+    let $cards = $('#cards');
+    let $toWechat = $('#toWechat');
+    let $toAlipay = $('#toAlipay');
+    let $toCard = $('#toCard');
+
+    $('#wechat,#alipay,#cards').on('click', function() {
+        $(this).children('.select').addClass('show').removeClass('hide');
+        $(this).siblings().children('.select').addClass('hide').removeClass('show');
+        console.log($(account).children());
+        console.log($(this))
+    })
+</script>
+
+</html>

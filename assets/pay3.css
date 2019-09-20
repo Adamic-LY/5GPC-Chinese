@@ -1,0 +1,120 @@
+#pay {
+  width: 75rem;
+  height: 60rem;
+  margin: 6rem auto;
+  border: 1px solid #7d7d7d;
+}
+#pay #PAY {
+  width: 100%;
+}
+#pay #payment {
+  background-color: #fff;
+  width: 100%;
+  height: 16rem;
+}
+#pay #payment .payment {
+  background-color: #5a92fb;
+  width: 100%;
+  height: 4rem;
+  padding: 0 3rem;
+  line-height: 4rem;
+  color: #fff;
+  font-size: 1.5rem;
+}
+#pay #payment #PAY {
+  padding: 0 4rem;
+  height: 12rem;
+  padding-top: 5rem;
+}
+#pay #payment #PAY .pay {
+  margin-top: 1rem;
+  margin-right: 3rem;
+  font-size: 1.5rem;
+}
+#pay #payment #PAY .pay span {
+  color: #e60000;
+}
+#pay #payment #PAY #wechat,
+#pay #payment #PAY #alipay,
+#pay #payment #PAY #cards {
+  width: 14rem;
+  height: 4rem;
+  border: 1px solid #7d7d7d;
+  padding-left: 2rem;
+  margin-left: 1rem;
+  position: relative;
+  overflow: hidden;
+}
+#pay #payment #PAY #wechat img:first-child,
+#pay #payment #PAY #alipay img:first-child,
+#pay #payment #PAY #cards img:first-child {
+  display: block;
+  width: 4rem;
+  height: 4rem;
+  padding: 1rem;
+  float: left;
+}
+#pay #payment #PAY #wechat span,
+#pay #payment #PAY #alipay span,
+#pay #payment #PAY #cards span {
+  display: block;
+  float: left;
+  height: 4rem;
+  line-height: 4rem;
+  font-size: 1.1rem;
+}
+#pay #payment #PAY #wechat img:last-child,
+#pay #payment #PAY #alipay img:last-child,
+#pay #payment #PAY #cards img:last-child {
+  display: block;
+  width: 3rem;
+  height: 3rem;
+  position: absolute;
+  right: -1.2rem;
+  bottom: -1.2rem;
+}
+#pay #account {
+  width: 100%;
+}
+#pay #account #toCard,
+#pay #account #toWechat,
+#pay #account #toAlipay {
+  width: 100%;
+  height: 22rem;
+  border: 2px solid #000;
+}
+#pay #account #toCard #title,
+#pay #account #toCard #details,
+#pay #account #toCard #tips {
+  width: 100%;
+  padding: 0 5rem;
+}
+#pay #account #toCard #title {
+  height: 6rem;
+  line-height: 6rem;
+  font-size: 1.5rem;
+}
+#pay #account #toCard #details {
+  margin-top: 3rem;
+}
+#pay #account #toCard #details div {
+  font-size: 1.1rem;
+  color: #969696;
+  margin-bottom: 1rem;
+}
+#pay #btn {
+  width: 100%;
+  height: 3rem;
+  margin-bottom: 6rem;
+}
+#pay #tips {
+  padding: 0 4rem;
+}
+#pay #tips h4 {
+  font-size: 1.25rem;
+  margin-bottom: 2rem;
+}
+#pay #tips p {
+  font-size: 1.1rem;
+  margin-bottom: 1rem;
+}
