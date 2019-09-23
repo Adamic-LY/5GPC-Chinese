@@ -7,7 +7,7 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>支付方式</title>
     <link rel="stylesheet" href="./assets/base.css">
-    <link rel="stylesheet" href="./assets/pay2.css">
+    <link rel="stylesheet" href="./assets/pay3.css">
     <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
 </head>
 
@@ -50,9 +50,9 @@
 
         </div>
         <div id="btn" class="btn">
-            <a href="#"></a>
+            <a href="#">已完成支付</a>
         </div>
-        <div id="tips" class="hide">
+        <div id="tips" class="show">
             <h4>【温馨提示】</h4>
             <p>1、对公转账请注明购票人员信息（姓名、单位）、门票种类（通票，20/21/22单日票）、门票数量</p>
             <p>2、付款七个工作日会发送参会二维码，发票将统一在大会结束后一个月内寄出</p>
@@ -66,12 +66,28 @@
     let $toWechat = $('#toWechat');
     let $toAlipay = $('#toAlipay');
     let $toCard = $('#toCard');
+    let $btn = $('#btn');
+    let $tips = $('#tips');
 
     $('#wechat,#alipay,#cards').on('click', function() {
         $(this).children('.select').addClass('show').removeClass('hide');
         $(this).siblings().children('.select').addClass('hide').removeClass('show');
-        console.log($(account).children());
-        console.log($(this))
+        if ($wechat.children()[2].className == "select show") {
+            $toWechat.addClass('show').removeClass('hide');
+            $toWechat.siblings().addClass('hide').removeClass('show');
+            $tips.addClass('hide').removeClass('show');
+            $btn.children()[0].innerHTML = '去支付';
+        } else if ($alipay.children()[2].className == "select show") {
+            $toAlipay.addClass('show').removeClass('hide');
+            $toAlipay.siblings().addClass('hide').removeClass('show');
+            $tips.addClass('hide').removeClass('show');
+            $btn.children()[0].innerHTML = '去支付';
+        } else if ($cards.children()[2].className == "select show") {
+            $toCard.addClass('show').removeClass('hide');
+            $toCard.siblings().addClass('hide').removeClass('show');
+            $tips.addClass('show').removeClass('hide');
+            $btn.children()[0].innerHTML = '已完成支付';
+        }
     })
 </script>
 
