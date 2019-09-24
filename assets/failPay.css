@@ -1,0 +1,40 @@
+#header {
+  width: 100%;
+  height: 9rem;
+  margin-top: 15rem;
+}
+#header #success {
+  width: 100%;
+  height: 5rem;
+  position: relative;
+}
+#header #success img {
+  display: block;
+  width: 5rem;
+  height: 5rem;
+  top: 0;
+  right: 0;
+  left: 0;
+  bottom: 0;
+  margin: auto;
+}
+#header #success p {
+  text-align: center;
+  margin-top: 2rem;
+  font-size: 1.25rem;
+}
+#btn {
+  width: 30rem;
+  margin: 10rem auto;
+}
+#btn input {
+  width: 10rem;
+  height: 3rem;
+  border-radius: 2rem;
+  border: none;
+  font-size: 1.2rem;
+}
+#btn .togo {
+  color: #fff;
+  background-color: #5a92fb;
+}
