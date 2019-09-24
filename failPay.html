@@ -8,6 +8,7 @@
     <title>5G大会</title>
     <link rel="stylesheet" href="./assets/base.css">
     <link rel="stylesheet" href="./assets/failPay.css">
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
 </head>
 
 <body>
@@ -21,9 +22,19 @@
         </div>
     </div>
     <div id="btn">
-        <input type="button" class="left" value="取消支付">
-        <input type="button" class="right togo" value="重新支付">
+        <input type="button" class="left" value="取消支付" id="cancel">
+        <input type="button" class="right togo" value="重新支付" id="rePay">
     </div>
 </body>
+<script>
+    let $cancel = $('#cancel');
+    let $rePay = $('#rePay');
+    $cancel.on('click', function() {
+        console.log('取消支付');
+    });
+    $rePay.on('click', function() {
+        console.log('重新支付');
+    })
+</script>
 
 </html>
